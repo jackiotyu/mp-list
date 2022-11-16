@@ -33,7 +33,7 @@
     "dev:mp-lark": "cross-env NODE_ENV=development UNI_PLATFORM=mp-lark vue-cli-service uni-build --watch",
     "dev:mp-qq": "cross-env NODE_ENV=development UNI_PLATFORM=mp-qq vue-cli-service uni-build --watch",
     "dev:mp-toutiao": "cross-env NODE_ENV=development UNI_PLATFORM=mp-toutiao vue-cli-service uni-build --watch",
-    "dev:mp-weixin": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch",
+    "dev:mp-weixin": "cross-env VUE_APP_DEBUG=true NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch",
     "dev:mp-xhs": "cross-env NODE_ENV=development UNI_PLATFORM=mp-xhs vue-cli-service uni-build --watch",
     "dev:quickapp-native": "cross-env NODE_ENV=development UNI_PLATFORM=quickapp-native vue-cli-service uni-build --watch",
     "dev:quickapp-webview": "cross-env NODE_ENV=development UNI_PLATFORM=quickapp-webview vue-cli-service uni-build --watch",
@@ -94,7 +94,9 @@
     "jest": "^25.4.0",
     "mini-types": "*",
     "miniprogram-api-typings": "*",
+    "postcss": "^8.4.19",
     "postcss-comment": "^2.0.0",
+    "sass": "^1.56.1",
     "vue-template-compiler": ">= 2.6.14 < 2.7"
   },
   "browserslist": [
